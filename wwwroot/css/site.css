@@ -27,6 +27,8 @@ body {
     margin-bottom: 60px;
     font-family: 'Poppins', sans-serif;
     background-color: #ebeae8;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 /* NAVBAR */
@@ -239,8 +241,8 @@ body {
     font-size: 2.8rem;
     color: #153828;
     margin-bottom: 20px;
+    text-align: center;
 }
-
 
 /* Timeline Vertical Line */
 .timeline-wrapper {
@@ -293,7 +295,7 @@ body {
     font-weight: 700;
     font-size: 1.4rem;
     color: #153828;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 .company {
@@ -311,14 +313,14 @@ body {
 
 .experience-card ul {
     padding-left: 18px;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .experience-card li {
     font-family: 'Poppins-Regular', sans-serif;
     font-size: 0.95rem;
     color: #555;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     line-height: 1.6;
 }
 
@@ -413,9 +415,8 @@ body {
 }
 .projects-section {
   padding-top: 20px;
-
-    background-color: #ebeae8;;
-    padding-bottom: 120px;
+  background-color: #ebeae8;;
+  padding-bottom: 50px;
 }
 /* "project" */
 .project-title-italic{
@@ -662,75 +663,130 @@ body {
     letter-spacing: 0.5px; /* Slight expansion on hover for interactivity */
 }
 
-/* Responsive Scaling */
-@media (max-width: 768px) {
-    .footer-heading {
-        font-size: 3.5rem;
-    }
+/* --- GLOBAL OVERFLOW & CENTER FIX --- */
+body, html {
+    overflow-x: hidden; /* Strict horizontal lock */
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    .achievement-side {
-        flex-wrap: wrap;
-    }
-    .achievement-side img {
-        flex: unset;
-        width: 45%; /* Shows images in a 2x2 or 2x3 grid on mobile */
-        border-radius: 40px;
-    }
+
+/* Ensure every section is a full-width block */
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the container inside the section */
 }
-/* Mobile */
+
+/* Force all containers to be flexible */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Limits width on desktop */
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+
+/* --- TABLET & MOBILE OVERRIDES --- */
 @media (max-width: 992px) {
-    .project-row, .project-row.reverse {
-        flex-direction: column;
+    /* Hero Section Centering */
+    .hero-section {
         text-align: center;
+        padding: 80px 15px;
     }
-    .img-wrapper {
-        height: 300px;
-    }
-}
 
-/* Mobile responsive */
-@media (max-width: 768px) {
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .timeline-wrapper {
-        padding-left: 25px;
-    }
-    .dot {
-        left: -36px;
-    }
-}
-
-/* Mobile Responsive */
-@media (max-width: 992px) {
-    .container-whoiam, .container-whatido {
-        flex-direction: column; /* Stacks text on top of image/grid */
+    /* Stack and Center what-i-do */
+    .container-whatido {
+        flex-direction: column !important;
         text-align: center;
-    }
-    
-    .profile-pic {
-        width: 250px;
-        height: 250px;
+        gap: 40px;
     }
 
     .grid-whatido {
+        grid-template-columns: repeat(2, 1fr) !important; /* 2x2 is better for tablets */
         width: 100%;
-        max-width: 400px; /* Prevents grid from getting too wide on mobile */
+        max-width: 500px;
+    }
+    .service-card {
+            aspect-ratio: auto; /* Remove the square constraint */
+            padding: 20px 25px;
+            background: #ffffff; /* Switching to skill-card style white background */
+            color: #153828;
+            border: 1px solid #eee;
+            border-left: 5px solid #153828; /* The signature green accent */
+            justify-content: flex-start; /* Align text to left */
+            text-align: left;
+            display: block; /* Allows natural text wrapping */
+            width: 100%;
+        }
+
+    .service-card:hover {
+        background-color: #fcfcfc;
+        transform: translateX(10px); /* Slide right instead of lifting up */
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    /* Project Gallery Centering */
+    .projects-section {
+      padding-top: 20px;
+      background-color: #ebeae8;;
+      padding-bottom: 4px;
+    }
+    .project-row, .project-row.reverse {
+        display: flex !important;
+        flex-direction: column !important;
+        text-align: center !important;
+        align-items: center;
+    }
+
+    .project-row.reverse .project-text {
+        order: 1; /* Puts text on top for both types of rows */
+    }
+
+    .project-visual-side, .project-visual-stack {
+        order: 2;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .tech-stack {
+        justify-content: center; /* Center tags on mobile */
+    }
+
+    /* Working Experience Centering */
+    .timeline-wrapper {
+        border-left: none; /* Remove side line for a cleaner centered look */
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .dot {
+        display: none; /* Remove timeline dots when centered */
+    }
+
+    .experience-card {
+        text-align: center;
+    }
+
+    .experience-card ul {
+        list-style: none; /* Removes bullets to keep centering clean */
+        padding-left: 0;
     }
 }
 
-/* 4. MOBILE ADJUSTMENTS */
-@media (max-width: 768px) {
-    .hero-title-italic, .hero-title-bold {
-        font-size: 3rem;
+/* Specific iPhone Fixes (XS to 17 Pro Max) */
+@media (max-width: 576px) {
+    .display-1, .display-2 {
+        font-size: clamp(2.5rem, 12vw, 3.5rem); /* Responsive fluid font */
     }
-    .hero-title-bold {
-        letter-spacing: 4px;
+
+    .grid-whatido {
+        grid-template-columns: 1fr !important; /* Single column for small phones */
+    }
+    
+    .achievement-side {
+        flex-wrap: wrap;
+        gap: 10px;
     }
 }
