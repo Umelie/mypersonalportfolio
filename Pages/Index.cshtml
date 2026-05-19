@@ -1,0 +1,285 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<section id="Home" class="hero-section">
+    <div class="text-center">
+    @* PlayfairDisplay-SemiBoldItalic.ttf *@
+    <h1 class="display-1">Personal</h1>
+    @* h1/h3/p is Poppins-Regular.ttf *@
+    <h1 class="display-2">Portfolio</h1>
+    <h3 class="display-3">Lady Umelie</h3>
+    <p> Bachelor of Computer Science (Hons.) | Full Stack Developer | ML/AI Enthusiast </p>
+</div>
+</section>
+
+
+<section id="AboutMe" class="AboutMe">
+    <div class="container-whoiam">
+        <div class="whoiam">
+             @* img in circle frame *@
+            <img src="~/img/profile.jpg" alt="Profile Picture" class="profile-pic" />
+            @* make it bold, playfair regular fonts *@
+            <h2>Who I am</h2>
+            @* just normal poppins regular *@
+            <p>
+                I am a final‑year Computer Science student at the University of Technology Sarawak, with hands‑on experience in full‑stack development from my previous internship. 
+                Currently, I am into machine learning, where I have developed a gender classification model and a recognition model for Malaysia Sign Language. 
+                I also have experience in leadership and am an adaptive individual who thrives in dynamic environments.
+            </p>
+           
+        </div>
+    </div>
+</section>
+
+<section  class="whatido-section">
+    <div class="container-whatido">
+         @* make it bold, playfair regular fonts *@
+        <div class="whatido">
+            <h2>What I do</h2>
+            @* just normal poppins regular *@
+            <p>
+                I’ve developed digital solutions across full-stack systems, machine learning, data analysis, and accessibility projects. 
+                Each experience, from building web platforms and mobile applications to designing AI models and pitching innovation  has strengthened 
+                my adaptability, leadership, and ability to deliver technology with both technical depth and social impact.
+            </p>
+        </div>
+
+        <div class="grid-whatido">
+            <div class="service-card">Mobile Apps</div>
+            <div class="service-card">Web Platforms</div>
+            <div class="service-card">AI/ML Model</div>
+            <div class="service-card">Data Analysis</div>
+            <div class="service-card">Database Management</div>
+            <div class="service-card">UI/UX Design</div>
+        </div>
+    </div>
+</section>
+
+<section id="Experience"class="working-experience">
+    <h2 class="section-title">Working Experience</h2>
+    <div class="timeline-wrapper">
+        
+        <div class="experience-card">
+            <div class="dot"></div> <div class="card-content">
+                <h3>Full-stack Developer Internship</h3>
+                <p class="company">AQWise Sdn Bhd | Selangor</p>
+                <p class="duration">Mar 2022 - Aug 2022</p>
+                <ul>
+                    <li>Developed and refined mobile application interfaces using <strong>Flutter</strong> for both Android and iOS platforms.</li>
+                    <li>Designed backend integration for user authentication and utilized <strong>Firestore</strong> for database management and real-time data fetching.</li>
+                    <li>Researched and implemented <strong>Stripe</strong> for in-app subscriptions, including auto-updates for user roles and saving payment receipts.</li>
+                    <li>Managed Firebase databases to streamline data collection and efficiently retrieve app content.</li>
+                    <li>Designed and implemented UI/UX code, enhancing the visual appeal and usability of the application.</li>
+                    <li>Updated and maintained existing programs to improve functionality, including bug fixes and performance enhancements.</li>
+                    <li>Attended client meetings to ensure requirements and expectations were met.</li>
+                    <li>Involved in rigorous software testing to identify and report bugs and UI/UX errors.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <div class="dot"></div> <div class="card-content">
+                <h3>Production Operator</h3>
+                <p class="company">Technocom Systems Sdn Bhd | Johor Baru</p>
+                <p class="duration">Aug 2022 - Jan 2023</p>
+                <ul>
+                    <li>Performed functional and quality testing on products using automated machinery.</li>
+                    <li>Identified and resolved product defects during the assembly process to minimize waste and ensure high standards.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="skills-section">
+    <h2 class="section-title">Skills & Expertise</h2>
+    
+    <div class="skills-grid">
+        <div class="skill-card">
+            <div class="skill-header">
+                <span class="skill-icon">💻</span>
+                <h3>Programming</h3>
+            </div>
+            <div class="skill-tags">
+                <span>Python</span><span>C#</span><span>VB.NET</span><span>Java</span>
+                <span>Dart</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-header">
+                <span class="skill-icon">⚙️</span>
+                <h3>Frameworks</h3>
+            </div>
+            <div class="skill-tags">
+                <span>Flutter</span><span>ASP.NET Core</span><span>.NET MAUI</span>
+                <span>Flask</span><span>TensorFlow</span><span>PyTorch</span><span>Keras</span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-header">
+                <span class="skill-icon">🗄️</span>
+                <h3>Databases</h3>
+            </div>
+            <div class="skill-tags">
+                <span>MySQL</span><span>Firebase</span><span>MongoDB</span><span>SQLite</span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-header">
+                <span class="skill-icon">📊</span>
+                <h3>Data Analysis</h3>
+            </div>
+            <div class="skill-tags">
+                <span>Pandas</span><span>Matplotlib</span><span>Seaborn</span><span>Jupyter</span><span>R</span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-header">
+                <span class="skill-icon">🛠️</span>
+                <h3>Tools</h3>
+            </div>
+            <div class="skill-tags">
+                <span>Git/GitHub</span><span>VS Code</span><span>Android Studio</span><span>M365</span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-header">
+                <span class="skill-icon">🌐</span>
+                <h3>Languages</h3>
+            </div>
+            <div class="skill-tags">
+                <span class="highlight">Iban (Native)</span><span>Malay</span><span>English</span><span>Mandarin</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="ProjectGallery" class="Project-Gallery">
+    <div class="gallery-header text-center">
+        <h1 class="project-title-italic">Project</h1>
+        <h1 class="project-title-bold">Gallery</h1>
+        <p class="gallery-subtitle">Academic & Research Works</p>
+    </div>
+</section>
+
+<section class="projects-section">
+    <div class="container">
+        <div class="project-row">
+            <div class="project-text">
+                <span class="project-category">Final Year Project & INDES 2026</span>
+                <h3>Malaysia Sign Language Recognition</h3>
+                <p class="project-desc">
+                    A real-time recognition system leveraging a Hybrid CNN–LSTM Attention Network. 
+                    Integrating MediaPipe Holistic for robust, high-accuracy tracking of MSL alphabets and words.
+                </p>
+                <div class="tech-stack">
+                    <span>ASP.NET Core</span><span>TensorFlow</span><span>MediaPipe</span><span>Python</span>
+                </div>
+            </div>
+            <div class="project-visual-stack">
+                <img src="~/img/MSL-WEB1.png" class="project-static-img" alt="MSL Home"/>
+                <img src="~/img/MSL-WEB2.png" class="project-static-img" alt="MSL Practice"/>
+            </div>
+        </div>
+
+        <div class="project-row reverse">
+            <div class="project-text">
+                <span class="project-category">Mobile Development</span>
+                <h3>Chatter Gen Chatbot</h3>
+                <p class="project-desc">
+                    Streamlining university inquiries through a Flutter-based chatbot. 
+                    Utilizing ChatGPT API to provide students with real-time academic support and natural language interaction.
+                </p>
+                <div class="tech-stack">
+                    <span>Flutter</span><span>Dart</span><span>ChatGPT API</span><span>REST API</span>
+                </div>
+            </div>
+            <div class="project-visual-side">
+                <img src="~/img/chatter1.jpg" class="project-static-img" alt="Chatbot UI 1"/>
+                <img src="~/img/chatter2.jpg" class="project-static-img" alt="Chatbot UI 2"/>
+            </div>
+        </div>
+
+        <div class="project-row">
+            <div class="project-text">
+                <span class="project-category">Full-Stack Database Systems</span>
+                <h3>Oculus Sport App</h3>
+                <p class="project-desc">
+                    A sports facility booking solution. Architected scalable Firebase Firestore models 
+                    to manage complex match scheduling and user CRUD operations securely.
+                </p>
+                <div class="tech-stack">
+                    <span>Firebase</span><span>Node.js</span><span>Firestore</span><span>Agile</span>
+                </div>
+            </div>
+            <div class="project-visual-side">
+                <img src="~/img/oculus1.png" class="project-static-img" alt="Oculus 1"/>
+                <img src="~/img/oculus2.png" class="project-static-img" alt="Oculus 2"/>
+                <img src="~/img/oculus3.png" class="project-static-img" alt="Oculus 3"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Achievements" class="achievements">
+    <div class="container">
+        <h2 class="achievement-title">Achievements</h2>
+        
+        <div class="achievement-text-content">
+            <p class="highlight-text"><strong>TOP 5</strong> | FINAL YEAR PROJECT</p>
+            <p><strong>FINALIST</strong> | Tech Frontier Explorer x Science & Entrepreneurship Training Program (2026)</p>
+            <p><strong>SILVER AWARD</strong> | International Invention, Innovation & Design Competition (INDES 2026)</p>
+            <p><strong>DEAN’S LIST</strong> |  Academic Excellence - University of Technology Sarawak (Feb Semester 2024-2025)</p>
+        </div>
+
+        <div class="achievement-side">
+            <img src="~/img/A1.jpg" alt="Achievement 1"/>
+            <img src="~/img/A2.jpg" alt="Achievement 2"/>
+            <img src="~/img/A3.jpg" alt="Achievement 3"/>
+            <img src="~/img/A4.jpg" alt="Achievement 4"/>
+            <img src="~/img/A5.jpg" alt="Achievement 5"/>
+            <img src="~/img/A6.jpg" alt="Achievement 6"/>
+        </div>
+    </div>
+</section>
+
+<section id="Contact" class="contact-footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+             <h1 class="footer-heading">Let’s Connect</h1>
+             <h2 class="footer-name">LADY UMELIE</h2>
+             <p class="footer-degree">Bachelor of Computer Science (HONS.)</p>
+        </div>
+
+        <div class="footer-details">
+            <div class="contact-item">
+                <div class="contact-info-text">
+                    <span class="contact-label">Phone</span>
+                    <a href="tel:+601116150752" class="contact-link">+6011 1615 0752</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-info-text">
+                    <span class="contact-label">Email</span>
+                    <a href="mailto:msladyumelie@gmail.com" class="contact-link">msladyumelie@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-info-text">
+                    <span class="contact-label">LinkedIn</span>
+                    <a href="https://www.linkedin.com/in/ladyumelie" target="_blank" class="contact-link">linkedin.com/in/ladyumelie</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
