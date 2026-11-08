@@ -67,6 +67,75 @@ html {
     font-style: italic;
 }
 
+/* ---------- LOADING SCREEN ---------- */
+.pf-loader {
+    display: none;
+}
+
+.js .pf-loader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: var(--bg);
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.js:not(.pf-ready) body {
+    overflow: hidden;
+}
+
+.pf-loader--hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.pf-loader__name {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 600;
+    font-size: clamp(28px, 6vw, 40px);
+}
+
+.pf-loader__bar {
+    width: 160px;
+    height: 3px;
+    background: var(--line);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.pf-loader__bar span {
+    display: block;
+    width: 40%;
+    height: 100%;
+    background: var(--accent);
+    border-radius: 999px;
+    animation: pf-load 1.1s ease-in-out infinite;
+}
+
+@keyframes pf-load {
+    0%   { transform: translateX(-100%); }
+    100% { transform: translateX(400%); }
+}
+
+.pf-sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .pf-loader__bar span { animation: none; width: 100%; }
+    .js .pf-loader { transition: none; }
+}
+
 /* ---------- NAV ---------- */
 .pf-nav {
     display: flex;
