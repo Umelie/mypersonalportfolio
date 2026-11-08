@@ -1,0 +1,142 @@
+{
+  "name": "Lady Umelie",
+  "badge": "Final-year Computer Science · University of Technology Sarawak",
+  "intro": "Computer Science student building AI-powered applications, plus full-stack mobile and web apps.",
+  "currently": "AI Engineer Intern · Smartpeep",
+  "tagline": "Bachelor of Computer Science (Hons.) | Full Stack Developer | ML/AI Enthusiast | Software Engineering",
+  "desc": "I'm a final-year Computer Science student at the University of Technology Sarawak, focused on building AI-powered applications that solve real problems. My final year project is a real-time Malaysian Sign Language recognition system using a CNN-LSTM model, which placed Top 5 in my faculty and won Silver at International Invention, Innovation & Design Competition (INDES) 2026. Before moving into AI, I built mobile and web apps end to end with Flutter, Firebase and ASP.NET Core, and I enjoy carrying an idea all the way from model to working product.",
+
+  "stats": [
+    { "value": "Top 5", "label": "Final Year Project" },
+    { "value": "Silver", "label": "INDES 2026, Support for Special Disabilities" },
+    { "value": "90.6%", "label": "Average accuracy, Malaysian Sign Language web system" },
+    { "value": "Top 10", "label": "Tech Frontier Explorer final presenter" }
+  ],
+
+  "services": [
+    "AI & Machine Learning",
+    "Computer Vision",
+    "Full-Stack Web Development",
+    "Mobile App Development",
+    "AI-Integrated Applications",
+    "Data Analysis & Databases"
+  ],
+
+  "experience": [
+    {
+      "title": "AI Engineer Internship",
+      "company": "Smartpeep Sdn Bhd",
+      "location": "Johor",
+      "duration": "Sept 2026 - Dec 2026",
+      "summary": "Processed and labelled video data used to train AI models, researched model approaches and contributed to AI algorithm development in an agile team."
+    },
+    {
+      "title": "Manufacturing Operator",
+      "company": "Venture Sdn Bhd",
+      "location": "Johor",
+      "duration": "Sept 2022 - Jan 2023",
+      "summary": "Ran functional testing with automated machinery before assembly and flagged defective units to protect quality standards."
+    },
+    {
+      "title": "Full-stack Developer Internship",
+      "company": "AQWise Sdn Bhd",
+      "location": "Selangor",
+      "duration": "Mar 2022 - Aug 2022",
+      "summary": "Built Flutter interfaces for Android and iOS, designed authentication and Firestore integration, and implemented Stripe subscriptions."
+    }
+  ],
+
+  "skills": [
+    {
+      "icon": "",
+      "title": "AI & ML",
+      "tags": ["TensorFlow", "MediaPipe", "CNN-LSTM", "PyTorch", "Keras", "MobileNetV2", "OpenAI API"]
+    },
+    {
+      "icon": "",
+      "title": "Programming",
+      "tags": ["Python", "C#", "Java", "Dart", "JavaScript", "TypeScript", "C", "PHP"]
+    },
+    {
+      "icon": "",
+      "title": "Frameworks",
+      "tags": ["Flutter", "ASP.NET Core", ".NET MAUI", "Flask", "Node.js"]
+    },
+    {
+      "icon": "",
+      "title": "Data & databases",
+      "tags": ["Pandas", "NumPy", "Jupyter", "MySQL", "Firebase", "MongoDB", "SQLite"]
+    },
+    {
+      "icon": "",
+      "title": "Design & tools",
+      "tags": ["Figma", "Unity", "Blender", "Git/GitHub", "VS Code", "Android Studio"]
+    },
+    {
+      "icon": "",
+      "title": "Languages",
+      "tags": ["Iban (Native)", "Malay", "English", "Mandarin"],
+      "highlightFirst": true
+    }
+  ],
+
+  "projects": [
+    {
+      "category": "Final Year Project & INDES 2026",
+      "title": "Malaysian Sign Language Recognition",
+      "description": "A real-time recognition system trained on my own dataset, using MediaPipe Holistic for hand and body tracking and a fine-tuned CNN-LSTM model (82% average accuracy). The ASP.NET Core web version reaches 90.6% average accuracy and outputs English and Bahasa Melayu text, helping non-signers learn MSL.",
+      "techStack": ["ASP.NET Core", "TensorFlow", "MediaPipe", "Python", "CNN-LSTM"],
+      "images": [
+        { "src": "MSL-WEB1.png", "alt": "MSL web app home screen" },
+        { "src": "MSL-WEB2.png", "alt": "MSL web app practice screen" }
+      ]
+    },
+    {
+      "category": "Mobile App · Internship",
+      "title": "Ummah Empire App",
+      "description": "Cross-platform app built end to end at AQWise: authentication, Firestore data, and Stripe subscriptions with automatic role updates and saved receipts.",
+      "techStack": ["Flutter", "Firebase", "Stripe"],
+      "images": [
+        { "src": "UEplaystore.png", "alt": "Ummah Empire App on Google Play" }
+      ]
+    },
+    {
+      "category": "AI-integrated app",
+      "title": "Chatter Gen Chatbot",
+      "description": "A Flutter chatbot on the OpenAI API, configured to answer only university-related questions for students.",
+      "techStack": ["Flutter", "OpenAI API", "REST API"],
+      "images": [
+        { "src": "chatter01.jpg", "alt": "Chatbot screen 1" },
+        { "src": "chatter2.jpg", "alt": "Chatbot screen 2" }
+      ]
+    },
+    {
+      "category": "Full-stack database",
+      "title": "Oculus Sport App",
+      "description": "A sports facility booking app with Firestore data models for match scheduling and secure user CRUD, built in an Agile workflow.",
+      "techStack": ["Firebase", "Node.js", "Agile"],
+      "images": [
+        { "src": "oculus1.png", "alt": "Oculus Sport App screen 1" },
+        { "src": "oculus2.png", "alt": "Oculus Sport App screen 2" },
+        { "src": "oculus3.png", "alt": "Oculus Sport App screen 3" }
+      ]
+    }
+  ],
+
+  "achievements": [
+    { "label": "TOP 5", "text": "Final Year Project, Malaysian Sign Language Recognition, University of Technology Sarawak" },
+    { "label": "SILVER AWARD", "text": "International Invention, Innovation & Design Competition (INDES 2026), Support for Special Disabilities category" },
+    { "label": "TOP 10 FINALIST", "text": "Tech Frontier Explorer x Science & Entrepreneurship Training Program (2026)" },
+    { "label": "PUBLISHED", "text": "Extended abstract in the INDES 2026 e-book" },
+    { "label": "DEAN'S LIST", "text": "Academic excellence, University of Technology Sarawak (Feb Semester 2024 & 2025)" }
+  ],
+  "achievementImages": ["A1.jpg", "A7.jpg", "A3.jpg", "A4.jpg", "A5.jpg", "A6.jpg"],
+
+  "contact": {
+    "message": "Looking for a six-month internship from March 2027 in AI engineering or software engineering. I'd love to hear from you.",
+    "phone": "+6011 1615 0752",
+    "phoneHref": "tel:+601116150752",
+    "email": "msladyumelie@gmail.com",
+    "linkedin": "linkedin.com/in/ladyumelie"
+  }
+}
